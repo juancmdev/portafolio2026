@@ -8,7 +8,11 @@ function App() {
 
   return (
     <>
-      <h1 className='text-4xl'>Portafolio 2026</h1>
+      <div className="min-h-screen bg-slate-900 text-white flex items-center justify-center">
+      <h1 className="text-4xl font-bold text-sky-400">
+        ¡Mi Portafolio Web 2026! 🚀
+      </h1>
+    </div>
     </>
   )
 }
