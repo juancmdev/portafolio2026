@@ -1,4 +1,4 @@
-export default function Navbar() {
+const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -26,4 +26,6 @@ export default function Navbar() {
     </nav>
   );
 }
+
+export default Navbar;
 
