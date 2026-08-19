@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo / Nombre */}
         <a href="#" className="text-xl font-bold text-sky-400 hover:text-sky-300 transition-colors">
-          &lt;MiPortafolio /&gt;
+          &lt;JuanCMDev /&gt;
         </a>
 
         {/* Enlaces de navegación */}
