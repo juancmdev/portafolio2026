@@ -7,6 +7,7 @@ const Projects = () => {
       title: "Proyecto 1: Dashboard de Clima 🌤️",
       description: "Aplicación interactiva que consume una API meteorológica para mostrar el pronóstico del tiempo en tiempo real.",
       technologies: ["React", "Tailwind CSS", "REST API"],
+      image: "https://res.cloudinary.com/dgaqbo3m2/image/upload/v1756247064/words_of_the_week_bzbds4.jpg",
       githubUrl: "https://github.com/tu-usuario/proyecto-clima",
       demoUrl: "https://proyecto-clima.vercel.app"
     },
@@ -14,6 +15,7 @@ const Projects = () => {
       title: "Proyecto 2: E-commerce Landing Page 🛒",
       description: "Página de aterrizaje responsiva para una tienda en línea con carrito de compras simulado y filtros de productos.",
       technologies: ["React", "Tailwind CSS", "JavaScript"],
+      image: "https://res.cloudinary.com/dgaqbo3m2/image/upload/v1756247035/personal_pronouns_tdyfez.jpg",
       githubUrl: "https://github.com/tu-usuario/proyecto-ecommerce",
       demoUrl: "https://proyecto-ecommerce.vercel.app"
     }
@@ -34,8 +36,15 @@ const Projects = () => {
           {projectsList.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-800/60 border border-slate-700/60 rounded-xl p-6 flex flex-col justify-between hover:border-sky-500/50 transition-all shadow-lg"
+              className="bg-slate-800/60 border border-slate-700/60 rounded-xl p-6 overflow-hidden flex flex-col justify-between hover:border-sky-500/50 transition-all shadow-lg"
             >
+              {/* Imagen del proyecto 📸 */}
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                className="w-full h-48 object-cover"
+              />
+
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">
                   {project.title}
