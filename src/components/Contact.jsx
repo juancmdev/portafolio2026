@@ -75,6 +75,12 @@ const Contact = () => {
                 >
                     {isSending ? 'Enviando...⏳' : 'Enviar Mensaje 🚀'}
                 </button>
+
+                {isSent && (
+                    <p className="text-emerald-400 text-center text-sm mt-2">
+                        ¡Mensaje enviado don éxito! Te responmderé pronto. 😊
+                    </p>
+                )}
             </form>
         </div>
 
