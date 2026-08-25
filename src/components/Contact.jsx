@@ -1,4 +1,5 @@
 import { useRef, useState } from "react"
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
     const formRef = useRef();
@@ -8,13 +9,24 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsSending(true);
-    }
 
-    setTimeout(() => {
-        setIsSending(false);
-        setIsSent(true);
-        form.current.reset();
-    }, 1500);
+        emailjs.sendForm(
+            'service_sorrzax',   // Lo obtendremos de EmailJS
+            'template_hss0xyk',  // Lo obtendremos de EmailJS
+            formRef.current,
+            '8wgPeLABgqVUyu8xM'    // Lo obtendremos de EmailJS
+          )
+          .then(() => {
+            setIsSending(false);
+            setIsSent(true);
+            formRef.current.reset();
+          })
+          .catch((error) => {
+            console.error('Error al enviar:', error);
+            setIsSending(false);
+          });
+    }
+       
 
   return (
     <section id="contact" className="py-20 px-4 bg-slate-800/30">
