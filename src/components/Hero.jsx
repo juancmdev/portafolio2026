@@ -31,7 +31,7 @@ const Hero = () => {
         {/* Botones de acción (CTA) */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="projects"
+            href="#projects"
             className="w-full sm:w-auto px-6 py-3 bg-sky-500 hover:bg-sky-600 text-white font-medium rounded-lg transition-colors shadow-sky-500/20"
           >
             Ver Proyectos 🚀
