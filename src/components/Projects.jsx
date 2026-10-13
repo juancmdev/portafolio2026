@@ -9,7 +9,7 @@ const Projects = () => {
         "Aplicación interactiva que consume una API meteorológica para mostrar el pronóstico del tiempo en tiempo real.",
       technologies: ["React", "Tailwind CSS", "REST API"],
       image:
-        "https://res.cloudinary.com/dgaqbo3m2/image/upload/v1791853473/dashboard_clima_oyittn.jpg",
+        "https://res.cloudinary.com/dgaqbo3m2/image/upload/v1791853788/dashboard_clima_l8ox20.jpg",
       githubUrl: "https://github.com/juancmdev/dashboard_de_clima",
       demoUrl: "https://dashboarddeclimajuancmdev.netlify.app/",
     },
